@@ -6,12 +6,12 @@ wkhtmltox-packages:
 /usr/bin/wkhtmltopdf:
     file.symlink:
         - target: /usr/local/bin/wkhtmltopdf
-	- require:
-		- pkg: wkhtmltox-packages
+        - require:
+            - pkg: wkhtmltox-packages
 
 /usr/bin/wkhtmltoimage:
     file.symlink:
         - target: /usr/local/bin/wkhtmltoimage
-	- require:
-		- pkg: wkhtmltox-packages
+        - require:
+            - pkg: wkhtmltox-packages
 
